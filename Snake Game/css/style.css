@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Maven+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg3.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:left;
+    align-items:flex-end;   
+}
+
+#board{
+    background: linear-gradient(rgb(136, 240, 159) , rgb(225, 225, 111));
+    width: 120vmin;
+    height: 99vmin;
+    border: 3px dashed rgb(36, 100, 6);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    background : linear-gradient(red,yellow);
+    border: 2px solid purple;
+    border-radius: 9px;
+    transform: scale(1.02);
+}
+
+.snake{
+    background-color: purple;
+    border: 0.25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background : linear-gradient(red,purple);
+    border: 0.25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bungee Spice', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bungee Spice', cursive;
+}
